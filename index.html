@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars API</title>
+    <!-- Länka till Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+    <!-- Länka till den externa CSS-filen -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Star Wars Karaktärsdata</h1>
+    </header>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="mb-3">
+                    <input type="text" id="characterName" class="form-control" placeholder="Ange karaktärens namn">
+                </div>
+                <button id="fetchBtn" class="btn btn-primary">Hämta Data</button>
+                <textarea id="output" class="form-control mt-3" rows="10" readonly></textarea>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2023 Star Wars API Demo. All rights reserved.</p>
+    </footer>
+
+    <!-- Länka till den externa JavaScript-filen -->
+    <script src="script.js"></script>
+</body>
+</html>
